@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshat.Dev | Full Stack & ML Portfolio</title>
+    <meta name="description" content="Akshat Aggarwal's portfolio featuring full-stack and ML projects, competitive programming achievements, and contact details for internships and collaborations.">
+    <meta name="keywords" content="Akshat Aggarwal, portfolio, full stack developer, machine learning, React, Flask, LeetCode, Chandigarh">
+    <meta name="author" content="Akshat Aggarwal">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://pwoc.vercel.app/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Akshat.Dev | Full Stack & ML Portfolio">
+    <meta property="og:description" content="Explore Akshat Aggarwal's projects, skills, and achievements in software engineering and machine learning.">
+    <meta property="og:url" content="https://pwoc.vercel.app/">
+    <meta property="og:image" content="https://pwoc.vercel.app/og-image.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Akshat.Dev | Full Stack & ML Portfolio">
+    <meta name="twitter:description" content="Explore Akshat Aggarwal's projects, skills, and achievements in software engineering and machine learning.">
+    <meta name="twitter:image" content="https://pwoc.vercel.app/og-image.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "dev-bg": "#fcfcfc",
+                        "dev-grid": "#e5e7eb",
+                        "dev-ink": "#1e293b",
+                        "dev-primary": "#00C896",
+                        "dev-primary-dark": "#00A67C",
+                        "dev-accent-blue": "#3B82F6",
+                        "dev-accent-purple": "#8B5CF6",
+                        "dev-accent-yellow": "#F59E0B",
+                        "dev-surface": "#ffffff",
+                    },
+                    fontFamily: {
+                        "display": ["Fredoka", "sans-serif"],
+                        "body": ["Space Grotesk", "sans-serif"],
+                        "mono": ["JetBrains Mono", "monospace"],
+                    },
+                    boxShadow: {
+                        'cartoon': '4px 4px 0px 0px #1e293b',
+                        'cartoon-sm': '2px 2px 0px 0px #1e293b',
+                        'cartoon-hover': '2px 2px 0px 0px #1e293b',
+                        'cartoon-deep': '8px 8px 0px 0px #1e293b',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'blink': 'blink 1s step-end infinite',
+                        'spin-slow': 'spin 8s linear infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        blink: {
+                            '0%, 100%': { opacity: '1' },
+                            '50%': { opacity: '0' },
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            background-color: #fcfcfc;
+            background-image: 
+                linear-gradient(#e5e7eb 1px, transparent 1px),
+                linear-gradient(90deg, #e5e7eb 1px, transparent 1px);
+            background-size: 40px 40px;
+            transition: background-color 180ms ease, color 180ms ease;
+        }
+
+        html.dark body {
+            background-color: #0f172a;
+            background-image:
+                linear-gradient(rgba(71, 85, 105, 0.35) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(71, 85, 105, 0.35) 1px, transparent 1px);
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; border-left: 2px solid #1e293b; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 0; border: 2px solid #f1f1f1; }
+        ::-webkit-scrollbar-thumb:hover { background: #00C896; }
+        html.dark ::-webkit-scrollbar-track { background: #0f172a; border-left: 2px solid #334155; }
+        html.dark ::-webkit-scrollbar-thumb { background: #64748b; border: 2px solid #0f172a; }
+        html.dark ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+        .markdown-content pre {
+            background: rgba(0,0,0,0.3);
+            padding: 0.5rem;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
